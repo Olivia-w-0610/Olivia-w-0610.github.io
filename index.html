@@ -1,20 +1,73 @@
 <html>
   <head>
-	  <title> Olivia Wheeler Portfolio</title>
+	  <title>Olivia Wheeler Portfolio</title>
 	  <link rel="icon" href="images/whole-logo-thing.png" type="image/png">
+	  <style>
+		body {
+		  margin: 0;
+		  padding: 20px;
+		  font-family: Arial, sans-serif;
+		  background: #fafafa;
+		  color: #222;
+		}
+		.page-wrapper {
+		  max-width: 900px;
+		  margin: 0 auto;
+		  padding: 20px;
+		  background: #fff;
+		  border-radius: 12px;
+		  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+		}
+		header {
+		  display: flex;
+		  flex-wrap: wrap;
+		  align-items: center;
+		  justify-content: center;
+		  gap: 20px;
+		  text-align: center;
+		  margin-bottom: 30px;
+		}
+		header img {
+		  width: 120px;
+		  max-width: 100%;
+		  height: auto;
+		}
+		h1 {
+		  margin: 0;
+		  font-size: 2rem;
+		}
+		section {
+		  margin-bottom: 24px;
+		}
+		section h2 {
+		  margin-bottom: 10px;
+		  font-size: 1.4rem;
+		  color: #1a1a1a;
+		}
+		p {
+		  margin: 0;
+		  line-height: 1.7;
+		}
+	  </style>
   </head>
   <body lang="en">
-   
-   <header style="display:flex; align-items:center; justify-content:center; gap:20px;">
-      <img src="images/whole-logo-thing.png" alt="Whole logo thing" style="width:140px; height:auto;" />
-      <h1> Olivia Wheeler's Portfolio Website! </h1>
-    </header>
-	
-    <h2> About me </h2>
-	<p> I am a student at Frontenac Secondary School in Kingston, Ontario. </br>
-     My birthday is February 6th 2010 and I am 16 years old.  </p>
-  <h2>Course Information</h2>
-  <p>I am currently in Mr.Ye's grade 10, 11, 12 Communications Technology course.</p>
+    <div class="page-wrapper">
+      <header>
+        <img src="images/whole-logo-thing.png" alt="Whole logo thing" />
+        <h1>Olivia Wheeler's Portfolio Website</h1>
+      </header>
 
+      <main>
+        <section>
+          <h2>About me</h2>
+          <p>I am a student at Frontenac Secondary School in Kingston, Ontario. My birthday is February 6th, 2010 and I am 16 years old.</p>
+        </section>
+
+        <section>
+          <h2>Course Information</h2>
+          <p>I am currently in Mr. Ye's grade 10, 11, 12 Communications Technology course.</p>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
