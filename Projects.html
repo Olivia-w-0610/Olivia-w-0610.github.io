@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>Projects - Olivia Wheeler</title>
+	  <link rel="icon" href="whole-logo-thing.png" type="image/png">
+	  <style>
+		:root {
+		  --page-bg: #ffeaf2;
+		  --nav-bg: #9edfa8;
+		  --card-bg: #ffffff;
+		  --text: #1f2937;
+		  --muted: #475569;
+		  --accent: #ec4899;
+		  --border: rgba(30, 120, 67, 0.14);
+		  --button-bg: #ffffff;
+		  --button-hover: #f9f0f8;
+		}
+		* {
+		  box-sizing: border-box;
+		}
+		body {
+		  margin: 0;
+		  padding: 0;
+		  font-family: Inter, Arial, sans-serif;
+		  background: var(--page-bg);
+		  color: var(--text);
+		}
+		.page-wrapper {
+		  width: min(100%, 1080px);
+		  margin: 0 auto;
+		  padding: 32px 18px 40px;
+		}
+		.nav-bar {
+		  background: var(--nav-bg);
+		  padding: 24px 0;
+		  text-align: center;
+		  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.35);
+		}
+		.nav-bar a {
+		  color: white;
+		  text-decoration: none;
+		  margin: 0 18px;
+		  font-weight: 700;
+		  font-size: 1rem;
+		}
+		.nav-bar a:hover {
+		  text-decoration: underline;
+		}
+		.card {
+		  background: var(--card-bg);
+		  border: 1px solid var(--border);
+		  border-radius: 28px;
+		  box-shadow: 0 24px 50px rgba(25, 102, 62, 0.08);
+		  overflow: hidden;
+		  margin-top: 20px;
+		}
+		header {
+		  padding: 56px 36px 28px;
+		  text-align: center;
+		}
+		header img {
+		  width: 84px;
+		  height: auto;
+		  margin-bottom: 18px;
+		}
+		header h1 {
+		  margin: 0;
+		  font-size: clamp(2.4rem, 4vw, 3.5rem);
+		  line-height: 1.05;
+		}
+		.main-content {
+		  display: grid;
+		  gap: 24px;
+		  padding: 0 36px 36px;
+		}
+		.section-block {
+		  padding: 28px;
+		  border-radius: 20px;
+		  border: 1px solid rgba(236, 72, 153, 0.12);
+		  background: #fdf2fd;
+		}
+		.section-block h2 {
+		  margin: 0 0 16px;
+		  font-size: 1.5rem;
+		  color: #111827;
+		}
+		.section-block p {
+		  margin: 0;
+		  color: var(--muted);
+		  line-height: 1.8;
+		  font-size: 1.05rem;
+		}
+		.media-list {
+		  display: flex;
+		  flex-direction: column;
+		  gap: 20px;
+		}
+		.media-item h3 {
+		  margin: 0 0 8px;
+		  font-size: 1.3rem;
+		  color: var(--accent);
+		}
+		.media-item img {
+		  max-width: 100%;
+		  height: auto;
+		  border-radius: 12px;
+		  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+		}
+		.media-item audio {
+		  width: 100%;
+		  margin-top: 8px;
+		}
+		.nav-row {
+		  padding: 28px 36px 36px;
+		  display: flex;
+		  justify-content: flex-start;
+		}
+		a {
+		  color: var(--accent);
+		  text-decoration: none;
+		  font-weight: 600;
+		}
+		a:hover {
+		  text-decoration: underline;
+		}
+		.social-section {
+		  margin-top: 30px;
+		  padding: 26px;
+		  background: #f0fff4;
+		  border-radius: 24px;
+		  border: 1px solid rgba(30, 120, 67, 0.15);
+		}
+		.social-section h2 {
+		  margin: 0 0 16px;
+		  font-size: 1.5rem;
+		  color: #166f41;
+		}
+		.social-links {
+		  display: flex;
+		  flex-wrap: wrap;
+		  gap: 14px;
+		}
+		.social-link {
+		  background: var(--button-bg);
+		  border: 1px solid rgba(30, 120, 67, 0.18);
+		  border-radius: 16px;
+		  color: #166f41;
+		  display: inline-flex;
+		  align-items: center;
+		  padding: 12px 18px;
+		  text-decoration: none;
+		  font-weight: 600;
+		}
+		.social-link:hover {
+		  background: var(--button-hover);
+		}
+		.social-section p {
+		  margin: 16px 0 0;
+		  color: var(--muted);
+		}
+	  </style>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <a href="index.html">Home</a>
+      <a href="about-me.html">About Me</a>
+      <a href="Projects.html">Projects</a>
+      <a href="Social.html">Social Media</a>
+    </div>
+
+    <div class="page-wrapper">
+      <div class="card">
+        <header>
+          <img src="whole-logo-thing.png" alt="Whole logo thing" />
+          <h1>Projects</h1>
+        </header>
+
+        <main class="main-content">
+          <section class="section-block">
+            <h2>Images</h2>
+            <div class="media-list">
+              <div class="media-item">
+                <h3>Whole Logo Thing</h3>
+                <img src="whole-logo-thing.png" alt="Whole Logo Thing" style="max-width: 200px; height: auto;" />
+                <a class="social-link" href="whole-logo-thing.png" download>Download whole-logo-thing.png</a>
+              </div>
+              <div class="media-item">
+                <h3>Album Merge Thing 2</h3>
+                <img src="album-merge-thing2.png" alt="Album Merge Thing 2" style="max-width: 200px; height: auto;" />
+                <a class="social-link" href="album-merge-thing2.png" download>Download album-merge-thing2.png</a>
+              </div>
+              <div class="media-item">
+                <h3>Melodia Logo Word</h3>
+                <img src="melodia-logo-word.png" alt="Melodia Logo Word" style="max-width: 200px; height: auto;" />
+                <a class="social-link" href="melodia-logo-word.png" download>Download melodia-logo-word.png</a>
+              </div>
+              <div class="media-item">
+                <h3>Weezer But More</h3>
+                <img src="weezer-but-more.png" alt="Weezer But More" style="max-width: 200px; height: auto;" />
+                <a class="social-link" href="weezer-but-more.png" download>Download weezer-but-more.png</a>
+              </div>
+              <div class="media-item">
+                <h3>Wine Logo</h3>
+                <img src="wine-logo.png" alt="Wine Logo" style="max-width: 200px; height: auto;" />
+                <a class="social-link" href="wine-logo.png" download>Download wine-logo.png</a>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-block">
+            <h2>Audio</h2>
+            <div class="media-list">
+              <div class="media-item">
+                <h3>Song Mashup</h3>
+                <audio controls>
+                  <source src="song-mashup.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+          </section>
+
+
+        </main>
+
+        <div class="nav-row">
+          <a href="index.html">← Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
